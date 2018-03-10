@@ -4,7 +4,7 @@
 ## 搭建Ubuntu环境，用户名、密码全设置为 snort
     改root的密码，后面都基于root的权限执行（
     >sudo passwd root
-## 安装lamp环境（是为了检测到数据可以可视化）,网上随便找个lamp一键安装包，比如wdlinux的lanmp（http://www.wdlinux.cn/bbs/thread-53213-1-1.html）
+## 安装lamp环境（是为了检测到数据可以可视化）,网上随便找个lamp一键安装包，比如lamp.sh网站[https://lamp.sh/install.html],或者oneinstack的[https://oneinstack.com/],或者wdlinux的lanmp（http://www.wdlinux.cn/bbs/thread-53213-1-1.html）
     >wget http://dl.wdlinux.cn/files/lanmp_v3.1.tar.gz
     >tar zxvf lanmp_v3.1.tar.gz
     >sh lanmp.sh                   默认安装
@@ -27,7 +27,9 @@
     >>flush privileges;
     >>quit;
 ## snort官网（https://www.snort.org）
-## 方法一：snort官网下载安装方法（https://www.snort.org/#documents）
+## 方法一：snort官网下载安装方法（https://www.snort.org/documents#OfficialDocumentation）
+   在其中找到Ubuntu的安装即可。
+   ![1](./images/01.png)
 ## 方法二：下载安装snort --基于apt-get
     >apt-get install snort snort-rules-default 
     安装过程会让你输入网卡，打开另外一个bash（终端），查看网卡
